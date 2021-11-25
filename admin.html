@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Perry Liu | Portfolio Site</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Perry Liu's personal CV and portfolio site, featuring web dev showcases, Excel spreadsheets, 3D renders, game source code etc.">
+    <meta property="og:image" content="assets/img/landing/perry.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS--> 
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <!-- <nav role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="/" class="brand-logo" style="height: 100%;"><picture><source type="image/webp" srcset="assets/img/landing/perry.webp"><source type="image/jpeg" srcset="assets/img/landing/perry.jpg"><img src="assets/img/landing/perry.jpg" style="position:relative; top:1px;height: 50%;" class="circle" loading="lazy" alt=""></picture> Perry Liu</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
+            <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="/assets/Perry%20CV.pdf" target=”_blank”><i class="fas fa-file-download"></i> CV</a></li>
+            <li><a href="https://github.com/perryliuofficial" target=”_blank”><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/perryliuofficial" target=”_blank”><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav> -->
+    <div class="navbar-fixed">
+    <nav class="grey darken-3">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="/" class="brand-logo" style="height: 100%;"><picture><source type="image/webp" srcset="assets/img/landing/perry.webp"><source type="image/jpeg" srcset="assets/img/landing/perry.jpg"><img src="assets/img/landing/perry.jpg" style="position:relative; top:1px;height: 50%;" class="circle" loading="lazy" alt=""></picture> Perry Liu</a>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="logged-in" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-account">Account</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+              <a href="#" class="" id="logout">Logout</a>
+            </li>
+            <li class="logged-in" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-create">Create Guide</a>
+            </li>
+            <li class="logged-out" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-login">Login</a>
+            </li>
+            <!-- <li class="logged-out" style="display: none;">
+              <a href="#" class=" modal-trigger" data-target="modal-signup">Sign up</a>
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+      <ul class="sidenav" id="nav-mobile">
+        <li class="logged-in">
+          <a href="#" class=" modal-trigger" data-target="modal-account">Account</a>
+        </li>
+        <li class="logged-in">
+          <a href="#" class="" id="logout">Logout</a>
+        </li>
+        <li class="logged-in">
+          <a href="#" class=" modal-trigger" data-target="modal-create">Create Guide</a>
+        </li>
+        <li class="logged-out">
+          <a href="#" class=" modal-trigger" data-target="modal-login">Login</a>
+        </li>
+        <!-- <li class="logged-out">
+          <a href="#" class=" modal-trigger" data-target="modal-signup">Sign up</a>
+        </li> -->
+      </ul>
+             
+
+    <section class="section">
+        <a class="mb-10 btn grey darken-3 dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Toggle Dark Mode</a>
+        <div class="row container">
+            <div class="col s12">
+            <h1 class="light-blue-text">Personal Admin Portal</h1>
+            <h5 class="grey-text text-darken-3">You're in the wrong place :P</h5>
+            </div>
+        </div>
+    </section>
+
+
+     
+
+
+
+
+    <section class="section" style="min-height: 100%;">
+        <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <button class="btn waves-effect waves-light light-blue">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn waves-effect waves-light light-blue">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ACCOUNT MODAL -->
+  <div id="modal-account" class="modal">
+    <div class="modal-content center-align">
+      <h4>Account details</h4><br />
+      <div class="account-details"></div>
+      <div class="account-extras"></div>
+    </div>
+  </div>
+
+  <!-- CREATE GUIDE MODAL -->
+  <div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Guide</h4><br />
+      <form id="create-form" class="row">
+        <div class="input-field col s3">
+          <input type="text" id="title" required>
+          <label for="title">Guide Title</label>
+        </div>
+        <div class="input-field col s3">
+          <input type="text" id="category" required>
+          <label for="category">Category</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="date_start" type="text" class="datepicker" required>
+          <label for="start_date">Start Date</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="date_end" type="text" class="datepicker" required>
+          <label for="end_date">End Date</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="content_short" class="materialize-textarea" required></textarea>
+          <label for="content_short">Content (short)</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="content_long" class="materialize-textarea" required></textarea>
+          <label for="content_long">Content (full)</label>
+        </div>
+        <div class="input-field col s4">
+          <input value="https://files.perryliu.co.uk/assets/img/Personal%20Site/" type="text" id="PNG" required>
+          <label for="content_full">PNG</label>
+        </div>
+        <div class="input-field col s4">
+          <input type="text" id="WebP" required>
+          <label for="content_full">WebP</label>
+        </div>
+        <div class="input-field col s4">
+          <input type="text" id="AVIF" required>
+          <label for="content_full">AVIF</label>
+        </div>
+          <div class="col s4 input-field"><input type="text" id="tag1" required><label for="tag">Tag</label></div>
+          <div class="col s4 input-field"><input type="text" id="tag2" required><label for="tag">Tag</label></div>
+          <div class="col s4 input-field"><input type="text" id="tag3" required><label for="tag">Tag</label></div>
+
+          <div class="col s6 input-field"><input type="text" id="link1" required><label for="link">Link Title</label></div>
+          <div class="col s6 input-field"><input type="text" id="url1" required><label for="link">Link URL</label></div>
+          <div class="col s6 input-field"><input type="text" id="link2" required><label for="link">Link Title</label></div>
+          <div class="col s6 input-field"><input type="text" id="url2" required><label for="link">Link URL</label></div>
+          <div class="col s6 input-field"><input type="text" id="link3" required><label for="link">Link Title</label></div>
+          <div class="col s6 input-field"><input type="text" id="url3" required><label for="link">Link URL</label></div>
+        <button class="btn waves-effect waves-light light-blue">Create</button>
+      </form>
+    </div>
+  </div>
+    </section>
+</main>
+
+    <section class="section"></section>
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">About Me</h5>
+              <p class="grey-text text-lighten-4">Internal Communications Consultant @ Vodafone Group. Web and game development hobbyist, along with the occasional 3D modelling and vector art drawings.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">My Other Stuff</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="https://github.com/ediprogsoc/ediprogsoc.github.io" target="_blank">EdiProgSoc</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!" disabled>TBC</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!" disabled>TBC</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!" disabled>TBC</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            © Perry Liu 2019 - <script>document.write( new Date().getFullYear() );</script>
+          <a class="grey-text text-lighten-4 right" href="site-version" target="_blank">Site Version 3.0</a>
+          </div>
+        </div>
+      </footer>
+
+
+
+      
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCuhLEZILO4OXk7reQ-Uf7QzFMfYLy-2qw",
+    authDomain: "perryliu-co-uk.firebaseapp.com",
+    databaseURL: "https://perryliu-co-uk.firebaseio.com",
+    projectId: "perryliu-co-uk",
+    storageBucket: "perryliu-co-uk.appspot.com",
+    messagingSenderId: "824592411040",
+    appId: "1:824592411040:web:57bd41c25f1b3056cf9cc5",
+    measurementId: "G-T18P747R4N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  // auth & firebase references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+
+//     service firebase.storage {
+//   match /b/{bucket}/o {
+//     match /{allPaths=**} {
+//       allow read, write: if request.auth != null;
+//     }
+//   }
+// }
+
+
+</script>
+    <!-- JavaScript -->
+    <script src="https://kit.fontawesome.com/77202afacb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
